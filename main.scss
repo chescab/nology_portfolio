@@ -1,11 +1,44 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans:wght@300&display=swap');
-
-$font-body: "OpenSans", "tahoma";
-$font-display: "AnticDidone", "arial";
-
-$color-primary: #d1d1c9;
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap');
+$color-primary: #D1D1C9;
 $color-secondary: #000000;
 $color-red: #B42828;
 $color-white: #EEEAEA;
 
+$font-body: "Open Sans", "Tahoma";
+$font-display: "Lora", "Times New Roman";
+
+
+* {
+    background-color: $color-primary;
+}
+
+.nav {
+    font-family: $font-body;
+    font-size: 14px;
+    color: $color-secondary;
+    height: 50px;
+    margin-top: 5em;
+    margin-left: 8em;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 5em;
+    margin-left: 35em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: $color-white !important;
+}
