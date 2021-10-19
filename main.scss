@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Scheherazade+New&display=swap');
 $color-primary: #D1D1C9;
 $color-secondary: #000000;
 $color-red: #B42828;
 $color-white: #EEEAEA;
-
 $font-body: "Open Sans", "Tahoma";
-$font-display: "Lora", "Times New Roman";
+$font-display: "Scheherazade New", "Times New Roman";
 
-
-* {
+body {
     background-color: $color-primary;
 }
-
 .nav {
     font-family: $font-body;
     font-size: 14px;
@@ -22,6 +19,7 @@ $font-display: "Lora", "Times New Roman";
     width: 500px;
     display: flex;
     justify-content: space-evenly;
+    background-color: $color-primary;
 }
 
 .logo {
@@ -41,4 +39,66 @@ a:link {
 }
 a:hover {
     color: $color-white !important;
+}
+
+/* Main Page*/
+
+.main-title {
+    font-size: 170px;
+    font-family: $font-display;
+    letter-spacing: .5rem;
+    text-align: center;
+    margin-top: 6rem;
+    line-height: 80%;
+    background-color: $color-primary;
+}
+
+#developer {
+    font-size: 160px;
+    font-family: $font-display;
+    letter-spacing: .5rem;
+    text-align: center;
+    line-height: 78%;
+    background-color: $color-primary;
+}
+
+.main-sub {
+    line-height: 1.6;
+    text-align: center;
+    width: 450px;
+    margin-left: 12em;
+    background-color: $color-primary;
+    margin-top: 3em;
+}
+
+.my-img {
+   height: 650px;
+   width: 650px;
+   position: absolute;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    border: solid;
+    border-color: $color-primary;  
+    margin-left: 38em;  
+}
+
+.linked-in {
+    padding-left: 13px;
+}
+
+.github {
+    padding-left: 13px;
+}
+
+.download {
+    padding-left: 13px;
+}
+
+.home-rectangle {
+    position: absolute;
+    margin-left: 8.5em;
+    margin-top: 20.5em;
 }
