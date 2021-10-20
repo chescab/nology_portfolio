@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Scheherazade+New&display=swap');
 $color-primary: #D1D1C9;
 $color-secondary: #000000;
+$color-tertiary: rgba(238, 234, 234, 0.58);
 $color-red: #B42828;
 $color-white: #EEEAEA;
-$font-body: "Open Sans", "Tahoma";
-$font-display: "Scheherazade New", "Times New Roman";
+
+
+$font-body: "Open Sans",
+"Tahoma";
+$font-display: "Scheherazade New",
+"Times New Roman";
 
 body {
     background-color: $color-primary;
+    padding-left: 3rem;
 }
+
 .nav {
     font-family: $font-body;
     font-size: 14px;
     color: $color-secondary;
     height: 50px;
     margin-top: 5em;
-    margin-left: 8em;
     width: 500px;
     display: flex;
     justify-content: space-evenly;
@@ -35,13 +41,15 @@ body {
 }
 
 a:link {
-    text-decoration: none;
+    text-decoration: none !important;
 }
+
 a:hover {
     color: $color-white !important;
 }
 
-/* Main Page*/
+/* Main Page */
+
 
 .main-title {
     font-size: 170px;
@@ -49,6 +57,7 @@ a:hover {
     letter-spacing: .5rem;
     text-align: center;
     margin-top: 6rem;
+    margin-left: 4rem;
     line-height: 80%;
     background-color: $color-primary;
 }
@@ -58,6 +67,7 @@ a:hover {
     font-family: $font-display;
     letter-spacing: .5rem;
     text-align: center;
+    margin-left: 2.5rem;
     line-height: 78%;
     background-color: $color-primary;
 }
@@ -72,17 +82,18 @@ a:hover {
 }
 
 .my-img {
-   height: 650px;
-   width: 650px;
-   position: absolute;
+    height: 600px;
+    width: 600px;
+    position: absolute;
 }
 
 .icons {
     display: flex;
     justify-content: center;
-    border: solid;
-    border-color: $color-primary;  
-    margin-left: 38em;  
+    margin-left: 38em;
+    margin-top: 2rem;
+    padding-bottom: 10rem;
+
 }
 
 .linked-in {
@@ -99,6 +110,132 @@ a:hover {
 
 .home-rectangle {
     position: absolute;
-    margin-left: 8.5em;
+    margin-left: 6.3em;
     margin-top: 20.5em;
+    width: 600px;
+}
+
+/* About section */
+
+.about-cont {
+    background: linear-gradient(to right,
+            $color-primary 50%,
+            $color-tertiary 50%,
+        );
+    padding-top: 0rem;
+    height: 870px;
+}
+
+.about-me {
+    padding: 3rem;
+    padding-top: 0;
+}
+
+.nav-about {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.logo-2 {
+    width: 150px;
+    height: 150px;
+
+}
+
+.nav2 {
+    font-family: $font-body;
+    font-size: 14px;
+    color: $color-secondary;
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-right: 5.5rem;
+    margin-top: 2rem;
+    width: 500px;
+
+}
+
+.about-name {
+    font-family: $font-display;
+    font-size: 22px;
+    padding-bottom: 0px;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    position: absolute;
+    height: 50px;
+}
+
+.about-info {
+    font-family: $font-body;
+    font-size: 14px;
+    word-spacing: 8px;
+    height: 400px;
+    padding: 4rem;
+    padding-top: 7rem;
+    width: 700px;
+    padding-bottom: 0px;
+}
+
+.about-rectangle {
+    position: absolute;
+    padding-left: 4rem;
+    margin-top: 5.2rem;
+}
+
+.about-rectangle2 {
+    padding-left: 4rem;
+}
+
+.image-logos {
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 250px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    
+}
+.html {
+    height: 31px;
+    width: 30px;
+}
+
+.arrow-project {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.8rem;
+
+}
+
+.right-arrow {
+    height: 60px;
+    width: 60px;
+    margin-right: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.click-project {
+    margin-right: 2rem;
+    margin-top: 2.3rem;
+    color: $color-red;
+    font-family: $font-display;
+    font-size: 20px;
+}
+
+.about {
+    font-family: $font-display;
+    font-size: 300px;
+    position: absolute;
+   transform: rotate(-20deg);
+   width: 900px;
+   padding-top: 2rem;
+
+}
+.about-rectangle3 {
+    position: absolute;
+    padding-top: 12rem;
 }
