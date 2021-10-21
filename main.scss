@@ -135,11 +135,13 @@ a:hover {
     display: flex;
     justify-content: space-between;
     padding-top: 4rem;
+    padding-top: 0px;
 }
 
 .logo-2 {
     width: 150px;
     height: 150px;
+    padding: 0px;
 
 }
 
@@ -155,6 +157,7 @@ a:hover {
     margin-right: 5.5rem;
     margin-top: 2rem;
     width: 500px;
+    padding-top: 3rem;
 
 }
 
@@ -238,4 +241,48 @@ a:hover {
 .about-rectangle3 {
     position: absolute;
     padding-top: 12rem;
+}
+
+/* Projects */ 
+
+.nav-project {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+
+.logo-3 {
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+}
+
+.nav3 {
+    font-family: $font-body;
+    font-size: 14px;
+    color: $color-secondary;
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-right: 5.5rem;
+    width: 500px;
+    padding-top: 3rem;
+}
+
+.project {
+    font-family: $font-display;
+    font-size: 280px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding: 0px;
+}
+
+.project-rectangle {
+   position: absolute;
+   padding-left: 16rem;
+   padding-top: 15rem;
+   width: 72rem;
 }
