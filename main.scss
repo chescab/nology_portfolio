@@ -93,6 +93,7 @@ body {
     background-color: $color-primary;
     margin-top: 3em;
     flex-wrap: wrap;
+    font-family: $font-body;
     }
 
     .my-img {
@@ -315,8 +316,6 @@ body {
     font-size: 280px;
     text-align: center;
     height: 250px;
-    position: relative;
-    z-index: 2;
 
     }
 
@@ -325,8 +324,8 @@ body {
    padding-left: 16rem;
    padding-top: 15rem;
    width: 72rem;
-
     }
+
 
     .proj-dark-cont {
     height: 300px;
@@ -338,6 +337,8 @@ body {
     background: $gray-500;
     position: relative;
     z-index: 10;
+    position: relative;
+    font-family: $font-body;
     }
 
     .proj-dark-cont2 {
@@ -350,14 +351,86 @@ body {
     background-color: $gray-500;
     z-index: 10;
     position: relative;
-   
+    font-family: $font-body;
+
     }
 
     .proj-light-cont {
+    z-index: 3;
     position: relative;
-    z-index: 0;
     background-color: $color-tertiary;
     height: 500px;
-    width: 500px;
+    width: 900px;
     }
 }
+
+/* Contact */ 
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 0;
+
+    .logo-4 {
+        width: 150px;
+        height: 150px;
+        padding: 0px;
+    }   
+
+    .nav4 {
+        font-family: $font-body;
+        font-size: 14px;
+        color: $color-secondary;
+        height: 50px;
+        width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin-right: 5.5rem;
+        padding-top: 3rem;
+    }
+    
+    a:link {
+        text-decoration: none !important;
+    }
+        
+    a:hover {
+        color: $color-white !important;
+    }
+    
+}
+
+.contact-cont {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+    .get-in-touch {
+        font-family: $font-display;
+        font-size: 40px;
+    }
+
+    .contact-rectangle {
+        padding-bottom: 1.8rem;
+    }
+
+    .contact-info {
+        font-size: 14px;
+        font-family: $font-body;
+        width: 600px;
+        margin-left: 25rem;
+    }
+
+    .contact-info2 {
+        font-size: 14px;
+        font-family: $font-body;
+        width: 200px;
+        margin-left: 37rem;
+    }
+
+    #email {
+        font-style: italic;
+    }
+}
+
