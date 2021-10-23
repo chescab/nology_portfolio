@@ -16,6 +16,16 @@ $font-body: "Open Sans",
 $font-display: "Scheherazade New",
 "Times New Roman";
 
+@mixin flexEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
 body {
     background-color: $color-primary;
     padding-left: 3rem;
@@ -27,24 +37,23 @@ body {
     display: flex;
     justify-content: center;
 
-.nav {
-    font-family: $font-body;
-    font-size: 14px;
-    color: $color-secondary;
-    height: 50px;
-    margin-top: 5em;
-    width: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: $color-primary;
-    }
+    .nav {
+        font-family: $font-body;
+        font-size: 14px;
+        color: $color-secondary;
+        height: 50px;
+        margin-top: 5em;
+        width: 500px;
+        @include flexEvenly();
+        background-color: $color-primary;
+        }
 
-.logo {
-    width: 150px;
-    height: 150px;
-    margin-left: 5em;
-    margin-left: 35em;
-    }
+    .logo {
+        width: 150px;
+        height: 150px;
+        margin-left: 5em;
+        margin-left: 35em;
+        }
 
     a:link {
         text-decoration: none !important;
@@ -148,8 +157,7 @@ body {
     }
     
     .nav-about {
-        display: flex;
-        justify-content: space-between;
+        @include flexBetween();
         padding-top: 4rem;
         padding-top: 0px;
     }
@@ -167,8 +175,7 @@ body {
         color: $color-secondary;
         height: 50px;
         width: 500px;
-        display: flex;
-        justify-content: space-evenly;
+        @include flexEvenly();
         list-style-type: none;
         margin-right: 5.5rem;
         margin-top: 2rem;
@@ -218,8 +225,7 @@ body {
     }
     
     .image-logos {
-        display: flex;
-        justify-content: space-evenly;
+        @include flexEvenly();
         height: 30px;
         width: 250px;
         margin-top: 1rem;
@@ -251,6 +257,7 @@ body {
         color: $color-red;
         font-family: $font-display;
         font-size: 20px;
+        font-style: italic;
     }
     
     .about {
@@ -276,8 +283,7 @@ body {
     padding-bottom: 5rem;
 
     .nav-project {
-    display: flex;
-    justify-content: space-between;
+    @include flexBetween();
     padding-top: 5rem;
     padding-bottom: 0;
         }
@@ -294,8 +300,7 @@ body {
     color: $color-secondary;
     height: 50px;
     width: 500px;
-    display: flex;
-    justify-content: space-evenly;
+    @include flexEvenly();
     list-style-type: none;
     margin-right: 5.5rem;
     width: 500px;
@@ -367,8 +372,7 @@ body {
 /* Contact */ 
 
 .footer-nav {
-    display: flex;
-    justify-content: space-between;
+    @include flexBetween();
     padding-top: 5rem;
     padding-bottom: 0;
 
@@ -384,8 +388,7 @@ body {
         color: $color-secondary;
         height: 50px;
         width: 500px;
-        display: flex;
-        justify-content: space-evenly;
+        @include flexEvenly();
         list-style-type: none;
         margin-right: 5.5rem;
         padding-top: 3rem;
