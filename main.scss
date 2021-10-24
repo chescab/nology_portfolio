@@ -1,6 +1,6 @@
 @import './components';
 @import './layout';
-@import './variables';
+@import './base';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Scheherazade+New&display=swap');
 $color-primary: #D1D1C9;
@@ -28,39 +28,49 @@ $font-display: "Scheherazade New",
 
 body {
     background-color: $color-primary;
-    padding-left: 3rem;
 }
 
 /* Homepage */ 
 
-.navigation {
-    display: flex;
-    justify-content: center;
 
-    .nav {
-        font-family: $font-body;
-        font-size: 14px;
-        color: $color-secondary;
-        height: 50px;
-        margin-top: 5em;
-        width: 500px;
-        @include flexEvenly();
-        background-color: $color-primary;
-        }
 
-    .logo {
-        width: 150px;
-        height: 150px;
-        margin-left: 5em;
-        margin-left: 35em;
-        }
-
-    a:link {
-        text-decoration: none !important;
+.navbar {
+    background-color: $color-primary;
+    border: solid;
+    border-width: 1px;
+   
+    .logo-home {
+        height: 80px;
+        width: 80px;
+        padding: 0px;
+        
     }
-    
+    .navbar-brand {
+        font-family: $font-display;
+        font-style: italic;
+        padding: 0px;
+        margin: 0px;
+        
+        
+    }   
+    .navbar-nav {
+        font-family: $font-body;
+        width: 400px;
+        font-size: 14px;
+        margin-left: auto;
+    }
+
+    .nav-home {
+        background-color: $color-primary;
+    }
+
     a:hover {
-        color: $color-white !important;
+        color: $color-secondary !important;
+    }
+
+    .hamburger-icon {
+        height: 20px;
+        width: 20px;
     }
     
 }
@@ -69,6 +79,7 @@ body {
 
 /* Main Page */
 
+/*
 .home-cont {
     
     .main-title {
@@ -111,6 +122,14 @@ body {
     position: absolute;
     }
 
+    .home-rectangle {
+    position: absolute;
+    margin-left: 6.3em;
+    margin-top: 20.5em;
+    width: 600px;
+    }
+    */ 
+
     .icons {
     display: flex;
     justify-content: center;
@@ -132,14 +151,7 @@ body {
     padding-left: 13px;
     }
 
-    .home-rectangle {
-    position: absolute;
-    margin-left: 6.3em;
-    margin-top: 20.5em;
-    width: 600px;
-    }
 
-}
 
 /* About section */
 
@@ -437,3 +449,33 @@ body {
     }
 }
 
+
+/*  <nav class="navigation">
+      <img class="logo" src="/images/Franchesca Barias-logos.jpeg" alt="..." />
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="link-dark active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="link-dark" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="link-dark" href="#">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="link-dark" href="#">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    */ 
+
+
+/* <div class="icons">
+      <img class="linked-in" src="/images/linkedin.svg" alt="Linked-In" />
+      <img class="github" src="/images/github.svg" alt="Github" />
+      <img class="download" src="/images/download.svg" alt="Download-CV" />
+    </div>
+  </div>
+  </div>
+*/
