@@ -2,10 +2,10 @@
 @import './layout';
 @import './base';
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Scheherazade+New&display=swap');
-$color-primary: #D1D1C9;
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Open+Sans&display=swap');
+$color-primary: #E9E9E9;
 $color-secondary: #000000;
-$color-tertiary: rgba(238, 234, 234, 0.58);
+$color-tertiary: #DDDFE2;
 $color-red: #B42828;
 $color-white: #EEEAEA;
 $gray-500: #adb5bd;
@@ -13,7 +13,7 @@ $gray-500: #adb5bd;
 
 $font-body: "Open Sans",
 "Tahoma";
-$font-display: "Scheherazade New",
+$font-display: "Nova Mono",
 "Times New Roman";
 
 @mixin flexEvenly {
@@ -58,6 +58,7 @@ body {
         width: 400px;
         font-size: 14px;
         margin-left: auto;
+        color: $color-secondary
     }
 
     .nav-home {
@@ -75,352 +76,43 @@ body {
     
 }
 
-
-
-/* HOME PAGE */
-
 .home-cont {
-
-    .home-cont2 {
-        padding-top: 5rem;
-    }
-    .main-title {
-            max-width: 800px;
-
-    }
-    .software {
+    .title-1 {
         font-family: $font-display;
-        font-size: clamp(7rem, 12.5vw, 12.5vw);
-
-
     }
-    .developer {
+    .title-2 {
         font-family: $font-display;
-        color: $color-white;
-        font-size: clamp(7rem, 12.5vw, 12.5vw);
-        font-style: italic;
-
+    }
+    .title-3 {
+        font-family: $font-display;
+    }
+    .title-sub {
+        font-family: $font-body;
     }
 
-    .main-info {
-        text-align: center;
-        font-size: 20px;
-    
-    }
-
-    .home-icons {
-        word-spacing: 10px;
-    }
 
 }
 
-
-
-
-
-/* About section */
-
-.about-cont {
-    background: linear-gradient(to right,
-            $color-primary 50%,
-            $color-tertiary 50%,
-        );
-    padding-top: 0rem;
-    height: 870px;
-
-    .about-me {
-        padding: 3rem;
-        padding-top: 0;
-    }
-    
-    .nav-about {
-        @include flexBetween();
-        padding-top: 4rem;
-        padding-top: 0px;
-    }
-    
-    .logo-2 {
-        width: 150px;
-        height: 150px;
-        padding: 0px;
-    
-    }
-    
-    .nav2 {
-        font-family: $font-body;
-        font-size: 14px;
-        color: $color-secondary;
-        height: 50px;
-        width: 500px;
-        @include flexEvenly();
-        list-style-type: none;
-        margin-right: 5.5rem;
-        margin-top: 2rem;
-        width: 500px;
-        padding-top: 3rem;
-    
-    }
-    
-    a:link {
-        text-decoration: none !important;
-    }
-    
-    a:hover {
-        color: $color-white !important;
+.main-cont {
+    .about-cont2 {
+        background-color: $color-tertiary;
     }
 
-    .about-name {
+    h1 {
         font-family: $font-display;
-        font-size: 22px;
-        padding-bottom: 0px;
-        padding-left: 4rem;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-        position: absolute;
-        height: 50px;
     }
-    
-    .about-info {
-        font-family: $font-body;
-        font-size: 14px;
-        word-spacing: 8px;
+
+    .girl-img {
         height: 400px;
-        padding: 4rem;
-        padding-top: 7rem;
-        width: 700px;
-        padding-bottom: 0px;
-    }
-    
-    .about-rectangle {
-        position: absolute;
-        padding-left: 4rem;
-        margin-top: 5.2rem;
-    }
-    
-    .about-rectangle2 {
-        padding-left: 4rem;
-    }
-    
-    .image-logos {
-        @include flexEvenly();
-        height: 30px;
-        width: 250px;
-        margin-top: 1rem;
-        margin-left: 3rem;
-        
-    }
-    .html {
-        height: 31px;
-        width: 30px;
-    }
-    
-    .arrow-project {
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 0.8rem;
-    
-    }
-    
-    .right-arrow {
-        height: 60px;
-        width: 60px;
-        margin-right: 1.5rem;
-        margin-top: 0.8rem;
-    }
-    
-    .click-project {
-        margin-right: 2rem;
-        margin-top: 2.3rem;
-        color: $color-red;
-        font-family: $font-display;
-        font-size: 20px;
-        font-style: italic;
-    }
-    
-    .about {
-        font-family: $font-display;
-        font-size: 300px;
-        position: absolute;
-       transform: rotate(-20deg);
-       width: 900px;
-       padding-top: 2rem;
-    
-    }
-    .about-rectangle3 {
-        position: absolute;
-        padding-top: 12rem;
+        width: 400px;
     }
 }
-
-
-
-/* Projects */ 
 
 .project-cont {
-    padding-bottom: 5rem;
-
-    .nav-project {
-    @include flexBetween();
-    padding-top: 5rem;
-    padding-bottom: 0;
-        }
-
-    .logo-3 {
-    width: 150px;
-    height: 150px;
-    padding: 0px;
-    }   
-
-    .nav3 {
-    font-family: $font-body;
-    font-size: 14px;
-    color: $color-secondary;
-    height: 50px;
-    width: 500px;
-    @include flexEvenly();
-    list-style-type: none;
-    margin-right: 5.5rem;
-    width: 500px;
-    padding-top: 3rem;
-    }
-
-    a:link {
-        text-decoration: none !important;
-    }
-    
-    a:hover {
-        color: $color-white !important;
-    }
-
-
-    .project {
-    font-family: $font-display;
-    font-size: 280px;
-    text-align: center;
-    height: 250px;
-
-    }
-
-    .project-rectangle {
-   position: absolute;
-   padding-left: 16rem;
-   padding-top: 15rem;
-   width: 72rem;
-    }
-
-
-    .proj-dark-cont {
-    height: 300px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: solid;
-    border-width: 1px;
-    background: $gray-500;
-    position: relative;
-    z-index: 10;
-    position: relative;
-    font-family: $font-body;
-    }
-
-    .proj-dark-cont2 {
-    height: 300px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: solid;
-    border-width: 1px;
-    background-color: $gray-500;
-    z-index: 10;
-    position: relative;
-    font-family: $font-body;
-
-    }
-
-    .proj-light-cont {
-    z-index: 3;
-    position: relative;
-    background-color: $color-tertiary;
-    height: 500px;
-    width: 900px;
-    }
-}
-
-/* Contact */ 
-
-.footer-nav {
-    @include flexBetween();
-    padding-top: 5rem;
-    padding-bottom: 0;
-
-    .logo-4 {
-        width: 150px;
-        height: 150px;
-        padding: 0px;
-    }   
-
-    .nav4 {
-        font-family: $font-body;
-        font-size: 14px;
-        color: $color-secondary;
-        height: 50px;
-        width: 500px;
-        @include flexEvenly();
-        list-style-type: none;
-        margin-right: 5.5rem;
-        padding-top: 3rem;
-    }
-    
-    a:link {
-        text-decoration: none !important;
-    }
-        
-    a:hover {
-        color: $color-white !important;
-    }
-    
-}
-
-.contact-cont {
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-
-    .get-in-touch {
+    h1 {
         font-family: $font-display;
-        font-size: 40px;
-    }
-
-    .contact-rectangle {
-        padding-bottom: 1.8rem;
-    }
-
-    .contact-info {
-        font-size: 14px;
-        font-family: $font-body;
-        width: 600px;
-        margin-left: 25rem;
-    }
-
-    .contact-info2 {
-        font-size: 14px;
-        font-family: $font-body;
-        width: 200px;
-        margin-left: 37rem;
-    }
-
-    #email {
-        font-style: italic;
     }
 }
 
 
 
-/* <div class="icons">
-      <img class="linked-in" src="/images/linkedin.svg" alt="Linked-In" />
-      <img class="github" src="/images/github.svg" alt="Github" />
-      <img class="download" src="/images/download.svg" alt="Download-CV" />
-    </div>
-  </div>
-  </div>
-*/
