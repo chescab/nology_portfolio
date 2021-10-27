@@ -1,0 +1,54 @@
+@import './base';
+
+
+body {
+    background-color: $color-primary;
+}
+
+.navbar {
+    background-color: $color-primary;
+    border: solid;
+    border-width: 1px;
+    border-color: $color-tertiary;
+
+    .fb-logo {
+        height: 50px;
+        width: 100px;
+    }
+   
+    .logo-home {
+        height: 80px;
+        width: 80px;
+        padding: 0px;
+        
+    }
+    .navbar-brand {
+        font-family: $font-display;
+        font-style: italic;
+        padding: 0px;
+        margin: 0px;
+        
+        
+    }   
+    .navbar-nav {
+        font-family: $font-body;
+        width: 400px;
+        font-size: 14px;
+        margin-left: auto;
+        color: $color-secondary
+    }
+
+    .nav-home {
+        background-color: $color-primary;
+    }
+
+    a:hover {
+        color: $color-secondary !important;
+    }
+
+    .hamburger-icon {
+        height: 20px;
+        width: 20px;
+    }
+    
+}

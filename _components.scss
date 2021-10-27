@@ -1,0 +1,99 @@
+@import './base';
+
+.home-cont {
+   
+    .title-1 {
+        font-family: $font-display;
+    }
+    .title-2 {
+        font-family: $font-display;
+    }
+    .title-3 {
+        font-family: $font-display;
+    }
+    .title-sub {
+        font-family: $font-body;
+        font-style: italic;
+        
+    }
+}
+
+
+
+.main-cont {
+    .about-cont2 {
+        background-color: $color-tertiary;
+    }
+
+    h1 {
+        font-family: $font-display;
+    }
+
+    .about-info-cont {
+        max-width: 600px;
+    }
+
+    .about-info {
+        font-size: 14px;
+        font-family: $font-body;
+    }
+
+    .about-info2 {
+        font-size: 14px;
+        font-family: $font-body;
+    }
+
+   
+}
+
+.project-cont {
+    h1 {
+        font-family: $font-display;
+    }
+
+    
+
+    .col-1 {
+        background-color: $color-tertiary;
+        height: 130px;
+
+    }
+
+    .col-2 {
+    background-color: $color-tertiary;
+    }
+
+    .proj-title {
+        font-family: $font-display;
+    }
+
+}
+
+.contact {
+
+    .contact-cont {
+        background-color: $color-white;
+    }
+    .get-in-touch {
+        font-family: $font-display;
+    }
+    .contact-sub {
+        font-family: $font-body;
+    }
+
+    .email {
+        font-family: $font-body;
+    }
+
+    .email-id {
+        font-family: $font-display;
+        font-style: italic;
+    }
+}
+
+
+@media screen and (max-width: 574px) {
+    .girl-img {
+        display: none;
+    }
+}
