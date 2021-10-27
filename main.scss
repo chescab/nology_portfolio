@@ -27,6 +27,11 @@ body {
     border: solid;
     border-width: 1px;
     border-color: $color-tertiary;
+
+    .fb-logo {
+        height: 50px;
+        width: 80px;
+    }
    
     .logo-home {
         height: 80px;
@@ -126,6 +131,10 @@ body {
 
     .col-2 {
     background-color: $color-tertiary;
+    }
+
+    .proj-title {
+        font-family: $font-display;
     }
 
 }
