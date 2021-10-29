@@ -14,8 +14,10 @@
     .title-sub {
         font-family: $font-body;
         font-style: italic;
+        color: $color-blue;
         
     }
+
 }
 
 
@@ -84,6 +86,11 @@
         font-family: $font-display;
         font-style: italic;
     }
+
+    .red-line {
+        background: $color-blue;
+    }
+    
 }
 
 @media screen and (max-width: 574px) {
