@@ -85,12 +85,18 @@
     .email-id {
         font-family: $font-display;
         font-style: italic;
+        color: $color-blue
     }
 
     .red-line {
         background: $color-blue;
     }
+
+    .icons {
+        word-spacing: 6px;
+    }
     
+
 }
 
 @media screen and (max-width: 574px) {
@@ -112,6 +118,7 @@
     }
     .about-info {
         max-width: 600px;
+
     }
 }
 
