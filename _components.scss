@@ -21,7 +21,11 @@
 
 
 .main-cont {
-    .about-cont2 {
+
+    .about-cont {
+        background-color: $color-tertiary
+    }
+    .about-cont-sub {
         background-color: $color-tertiary;
     }
 
@@ -29,20 +33,11 @@
         font-family: $font-display;
     }
 
-    .about-info-cont {
-        max-width: 600px;
-    }
-
+    
     .about-info {
-        font-size: 14px;
         font-family: $font-body;
+        color: $color-secondary;
     }
-
-    .about-info2 {
-        font-size: 14px;
-        font-family: $font-body;
-    }
-
    
 }
 
@@ -91,9 +86,26 @@
     }
 }
 
-
 @media screen and (max-width: 574px) {
     .girl-img {
         display: none;
     }
+    
 }
+
+@media screen and (min-width: 995px) {
+    .about-info {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 99px) {
+    .about-info {
+        font-size: 12px;
+    }
+    .about-info {
+        max-width: 600px;
+    }
+}
+
+
