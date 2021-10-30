@@ -66,10 +66,23 @@
 
 }
 
+.education-cont {
+    .education {
+        font-family: $font-display;
+    }
+    .bon {
+        font-family: $font-body;
+    }
+    .education-info {
+        font-family: $font-body;
+    }
+}
+
 .contact {
 
     .contact-cont {
         background-color: $color-pink;
+        max-width: 60%;
     }
     .get-in-touch {
         font-family: $font-display;
@@ -96,7 +109,16 @@
         word-spacing: 6px;
     }
     
+    .my-img {
+        width: 300px;
+        height: 300px;
+    }
 
+    .fill-cont {
+       
+         background-color: $color-pink;
+        
+    }
 }
 
 @media screen and (max-width: 574px) {
@@ -104,6 +126,12 @@
         display: none;
     }
     
+}
+
+@media screen and (max-width:574px) {
+    .programmer-img {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 993px) {
