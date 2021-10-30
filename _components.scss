@@ -1,7 +1,8 @@
 @import './base';
 
 .home-cont {
-   
+    
+
     .title-1 {
         font-family: $font-display;
     }
@@ -14,7 +15,6 @@
     .title-sub {
         font-family: $font-body;
         font-style: italic;
-        color: $color-blue;
         
     }
 
@@ -25,25 +25,24 @@
 .main-cont {
 
     .about-cont {
-        background-color: $color-olive;
+        background-color: $color-white;
     }
     .about-cont-sub {
-        background-color:$color-olive;
+        background-color:$color-white;
     }
 
     h1 {
         font-family: $font-display;
     }
 
-    
+    .about-title {
+        color: $color-pink;
+    }
     .about-info {
         font-family: $font-body;
         color: $color-secondary;
     }
 
-    .about-icons {
-        background-color: $color-olive;
-    }
    
 }
 
@@ -55,13 +54,13 @@
     
 
     .col-1 {
-        background-color: $color-tertiary;
+        background-color: $color-blue;
         height: 130px;
 
     }
 
     .col-2 {
-    background-color: $color-tertiary;
+    background-color: $color-blue;
     }
 
     .proj-title {
@@ -70,12 +69,14 @@
 
 }
 
+
 .education-cont {
     .education {
         font-family: $font-display;
     }
     .uni {
         font-family: $font-display;
+        color: $color-pink;
     }
     .education-info {
         font-family: $font-body;
@@ -83,6 +84,7 @@
 
     .nology {
         font-family: $font-display;
+        color: $color-pink;
     }
 
     .bon {
@@ -102,7 +104,7 @@
 .contact {
 
     .contact-cont {
-        background-color: $color-olive;
+        background-color: $color-white;
         max-width: 80%;
     }
     .get-in-touch {
@@ -138,7 +140,7 @@
 
     .fill-cont {
        
-         background-color: $color-olive;
+         background-color: $color-white;
         
     }
 
