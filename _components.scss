@@ -40,6 +40,10 @@
         font-family: $font-body;
         color: $color-secondary;
     }
+
+    .about-icons {
+        background-color: $color-olive;
+    }
    
 }
 
@@ -70,11 +74,28 @@
     .education {
         font-family: $font-display;
     }
-    .bon {
+    .uni {
         font-family: $font-body;
     }
     .education-info {
         font-family: $font-body;
+    }
+
+    .nology {
+        font-family: $font-display;
+    }
+
+    .bon {
+        font-family: $font-body;
+    }
+
+    .trainee {
+        font-family: $font-body;
+    }
+
+    .trainee-info {
+        font-family: $font-body
+        
     }
 }
 
@@ -82,13 +103,14 @@
 
     .contact-cont {
         background-color: $color-pink;
-        max-width: 60%;
+        max-width: 80%;
     }
     .get-in-touch {
         font-family: $font-display;
     }
     .contact-sub {
         font-family: $font-body;
+        max-width: 70%;
     }
 
     .email {
@@ -110,14 +132,18 @@
     }
     
     .my-img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .fill-cont {
        
          background-color: $color-pink;
         
+    }
+
+    .fb {
+        font-family: $font-body;
     }
 }
 
@@ -131,6 +157,12 @@
 @media screen and (max-width:574px) {
     .programmer-img {
         display: none;
+    }
+}
+
+@media screen and (max-width:574px) {
+    .my-img {
+        display:none;
     }
 }
 
