@@ -7,4 +7,4 @@ I first started building using the mobile approach to include the most basic fun
 
 Link to my first Figma draft prototype - https://www.figma.com/file/Mv7m7TjuYjL6069PnqxfFO/Untitled?node-id=0%3A1
 
-Link to my final draft prototype -
+Link to my final draft prototype - https://www.figma.com/file/Og1bpZKHEHdOP6mYWkfzYz/Untitled?node-id=0%3A1
