@@ -1,7 +1,6 @@
 @import './variables';
 
 .home-cont {
-    
 
     .title-1 {
         font-family: $font-display;
@@ -48,29 +47,21 @@
    
 }
 
+
 .project-cont {
     h1 {
         font-family: $font-display;
     }
 
-    
-
-    .col-1 {
-        background-color: $color-blue;
-        height: 130px;
-
-    }
-
-    .col-2 {
-    background-color: $color-blue;
-    }
-
-    .proj-title {
+    .card-title {
         font-family: $font-display;
+
+        .card-text {
+            font-family: $font-body;
+        }
     }
 
 }
-
 
 .education-cont {
     .education {
@@ -174,7 +165,7 @@
         font-size: 12px;
     }
     .about-info {
-        max-width: 600px;
+        max-width: 800px;
 
     }
 }
@@ -182,6 +173,18 @@
 @media screen and (min-width: 390px) {
     .info-cont {
         padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .inbox {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .stars {
+        display: none;
     }
 }
 
