@@ -11,25 +11,18 @@ body {
     border-width: 1px;
     border-color: $color-tertiary;
 
-    .fb-logo {
-        height: 50px;
-        width: 100px;
+    .nav-home {
+        background-color: $color-primary;
+
+        .navbar-brand {
+            font-family: $font-display;
+            font-style: italic;
+            padding: 0px;
+            margin: 0px;
+            
+        }   
     }
-   
-    .logo-home {
-        height: 80px;
-        width: 80px;
-        padding: 0px;
-        
-    }
-    .navbar-brand {
-        font-family: $font-display;
-        font-style: italic;
-        padding: 0px;
-        margin: 0px;
-        
-        
-    }   
+
     .navbar-nav {
         font-family: $font-body;
         width: 400px;
@@ -38,10 +31,7 @@ body {
         color: $color-secondary
     }
 
-    .nav-home {
-        background-color: $color-primary;
-    }
-
+   
     a:hover {
         color: $color-secondary !important;
     }
