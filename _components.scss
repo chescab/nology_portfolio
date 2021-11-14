@@ -7,16 +7,17 @@
     }
     .title-2 {
         font-family: $font-display;
-        color: $color-blue;
+        color: $color-background;
+        text-decoration: underline;
     }
     .title-3 {
         font-family: $font-display;
     }
     .title-sub {
         font-family: $font-body;
-        font-style: italic;
         
     }
+
 
 }
 
@@ -31,8 +32,9 @@
             background-color:$color-white;
         
             .about-title {
-                color: $color-blue;
+                color: $color-background;
                 font-family: $font-display;
+                text-decoration: underline;
             }
             .about-info {
                 font-family: $font-body;
@@ -51,6 +53,7 @@
 .project-cont {
     h1 {
         font-family: $font-display;
+        text-decoration: underline;
     }
 
     .card-title {
@@ -69,7 +72,7 @@
     }
     .uni {
         font-family: $font-display;
-        color: $color-pink;
+        color: $color-background;
     }
     .education-info {
         font-family: $font-body;
@@ -77,17 +80,17 @@
 
     .nology {
         font-family: $font-display;
-        color: $color-pink;
+        color: $color-background;
     }
  
     .bon {
         font-family: $font-body;
-        color: $color-blue;
+        color: $color-background;
     }
 
     .trainee {
         font-family: $font-body;
-        color: $color-blue;
+        color: $color-background;
     }
 
     .trainee-info {
@@ -104,7 +107,7 @@
     }
     .get-in-touch {
         font-family: $font-display;
-        color: $color-blue;
+        color: $color-background;
     }
     .contact-sub {
         font-family: $font-body;
@@ -118,7 +121,7 @@
     .email-id {
         font-family: $font-display;
         font-style: italic;
-        color: $color-pink;
+        color: $color-background;
     }
 
     .icons {
@@ -138,6 +141,12 @@
 
     .fb {
         font-family: $font-body;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .title-2 {
+        font-size: 15vh;
     }
 }
 
@@ -167,6 +176,12 @@
     .about-info {
         max-width: 800px;
 
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .project {
+        font-size: 15vh;
     }
 }
 

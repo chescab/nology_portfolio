@@ -3,6 +3,10 @@
 
 body {
     background-color: $color-primary;
+    
+    .btn {
+        font-family: $font-body;
+    }
 }
 
 .navbar {
