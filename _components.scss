@@ -169,7 +169,6 @@
         .contact-sub {
             font-family: $font-body;
             color: $color-primary;
-            max-width: 70%;
         }
 
         .email {
@@ -201,7 +200,30 @@
         .fb {
             font-family: $font-body;
         }
+
+        .fab{
+            color: $color-orange;
+        }
+
+        .fas{
+            color: $color-orange;
+        }
+
+        .copyright {
+            color: $color-primary;
+            font-size: 10px;
+            padding-top: 2rem;
+        }
+
+        .me {
+            height: 250px;
+            width: 250px;
+            padding-bottom: 1rem;
+        }
+
     }
+
+    
 }
 
 @media screen and (min-width: 1350px) {
