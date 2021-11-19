@@ -1,146 +1,206 @@
 @import './variables';
 
-.home-cont {
+.home-image {
+    background-image: url(/images/alexander-shatov-PHH_0uw9-Qw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
 
-    .title-1 {
-        font-family: $font-display;
-    }
-    .title-2 {
-        font-family: $font-display;
-        color: $color-background;
-        text-decoration: underline;
-    }
-    .title-3 {
-        font-family: $font-display;
-    }
-    .title-sub {
+.title-cont {
+    background-color: $color-background;
+
+    .title {
+        font-size: 10vh;
         font-family: $font-body;
-        
+        color: transparent;
+        -webkit-text-stroke: 1px $color-orange ;
+        background: url(/images/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
     }
-
-
-}
-
-
-
-.main-cont {
-
-    .about-cont {
-        background-color: $color-white;
-
-        .about-cont-sub {
-            background-color:$color-white;
-        
-            .about-title {
-                color: $color-background;
-                font-family: $font-display;
-                text-decoration: underline;
-            }
-            .about-info {
-                font-family: $font-body;
-                color: $color-secondary;
-            }
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
         }
     }
-    
 
-    
-
-   
-}
-
-
-.project-cont {
-    h1 {
-        font-family: $font-display;
-        text-decoration: underline;
+    .title-info {
+        color: $color-primary;
+        font-family: $font-body;
+        font-size: 18px;
     }
 
-    .card-title {
-        font-family: $font-display;
+    .create-info {
+        color: orange;
+        font-family: $font-body;
+        font-size: 18px;
+        font-style: italic;
 
-        .card-text {
+    }
+}
+
+.about-main-cont {
+    background-color: $color-background;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    .about-main {
+        background-color: $color-background;
+
+        .about-cont {
+            margin-right: 4rem;
+        }
+
+        .about-title {
+            color: $color-orange;
             font-family: $font-body;
+            font-size: 60px;
+        }
+
+        .about-info {
+            color: $color-primary;
+            font-family: $font-body;
+            font-size: 16px;
+            
+        }
+
+        .browsing-icon {
+            background-color: $color-background;
         }
     }
-
 }
+
+.icons {
+    background-color: $color-background;
+    padding-bottom: 5rem;
+
+    .fab {
+        color: $color-orange;
+    }
+}
+
 
 .education-cont {
+    background: $color-background;
+    padding-bottom: 5rem;
+
     .education {
-        font-family: $font-display;
+        font-family: $font-body;
+        color: $color-primary;
+        font-size: 40px;
+        color: $color-orange;
     }
     .uni {
-        font-family: $font-display;
-        color: $color-background;
+        font-family: $font-body;
+        color: $color-orange;
+        font-size: 20px;
     }
     .education-info {
         font-family: $font-body;
+        color: $color-primary;
     }
 
     .nology {
-        font-family: $font-display;
-        color: $color-background;
+        font-family: $font-body;
+        color: $color-orange;
+        font-size: 20px;
     }
  
     .bon {
         font-family: $font-body;
-        color: $color-background;
+        color: $color-primary;
     }
 
     .trainee {
         font-family: $font-body;
-        color: $color-background;
+        color: $color-primary;
     }
 
     .trainee-info {
-        font-family: $font-body
+        font-family: $font-body;
+        color: $color-primary;
         
+    }
+
+    .two-one {
+        color: $color-primary;
     }
 }
 
-.contact {
+.project-cont {
+    background-color: $color-background;
+    padding-bottom: 7rem;
 
-    .contact-cont {
-        background-color: $color-white;
-        max-width: 80%;
-    }
-    .get-in-touch {
-        font-family: $font-display;
-        color: $color-background;
-    }
-    .contact-sub {
+    .project {
         font-family: $font-body;
-        max-width: 70%;
+        font-size: 60px;
+        color: $color-orange;
+        padding-bottom: 2rem;
     }
 
-    .email {
-        font-family: $font-body;
-    }
-
-    .email-id {
+    .card-title {
         font-family: $font-display;
-        font-style: italic;
-        color: $color-background;
+        color: $color-primary;
     }
 
-    .icons {
-        word-spacing: 6px;
+    .card-text {
+        font-family: $font-body;
+        color: $color-primary;
     }
-    
-    .my-img {
-        width: 200px;
-        height: 200px;
-    }
+}
 
-    .fill-cont {
-       
-         background-color: $color-white;
+.contact-main-cont {
+    background-color: $color-background;
+
+    .contact {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .contact-cont {
+            max-width: 80%;
+        }
+        .get-in-touch {
+            font-family: $font-body;
+            color: $color-orange;
+            font-size: 60px;
+        }
+        .contact-sub {
+            font-family: $font-body;
+            color: $color-primary;
+            max-width: 70%;
+        }
+
+        .email {
+            font-family: $font-body;
+            color: $color-primary;
+        }
+
+        .email-id {
+            font-family: $font-display;
+            font-style: italic;
+            color: $color-orange;
+        }
+
+        .icons {
+            word-spacing: 6px;
+        }
         
-    }
+        .my-img {
+            width: 200px;
+            height: 200px;
+        }
 
-    .fb {
-        font-family: $font-body;
+        .fill-cont {
+        
+            background-color: $color-white;
+            
+        }
+
+        .fb {
+            font-family: $font-body;
+        }
     }
 }
 

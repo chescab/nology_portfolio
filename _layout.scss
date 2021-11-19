@@ -10,19 +10,21 @@ body {
 }
 
 .navbar {
-    background-color: $color-primary;
+    background-color: $color-background;
     border: solid;
     border-width: 1px;
-    border-color: $color-tertiary;
+    border-color: $color-background;
 
     .nav-home {
-        background-color: $color-primary;
+        background-color: $color-background;
 
         .navbar-brand {
-            font-family: $font-display;
+            font-family: $font-logo;
             font-style: italic;
             padding: 0px;
             margin: 0px;
+            color: $color-primary;
+            font-size: 40px;
             
         }   
     }
@@ -32,12 +34,17 @@ body {
         width: 400px;
         font-size: 14px;
         margin-left: auto;
-        color: $color-secondary
+        color: $color-primary;
+
+        .nav-link {
+            color: $color-primary;
+        }
     }
 
    
     a:hover {
         color: $color-secondary !important;
+        
     }
 
     .hamburger-icon {
