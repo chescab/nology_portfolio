@@ -25,6 +25,8 @@ body {
             margin: 0px;
             color: $color-primary;
             font-size: 40px;
+
+            
             
         }   
     }
@@ -47,9 +49,8 @@ body {
         
     }
 
-    .hamburger-icon {
-        height: 20px;
-        width: 20px;
+    .ham-icon {
+        color: $color-primary;
     }
     
 }
