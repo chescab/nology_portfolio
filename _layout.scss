@@ -1,51 +1,39 @@
 @import './variables';
 
 
-body {
-    background-color: $color-primary;
-    
-    .btn {
-        font-family: $font-body;
-    }
-}
 
 .navbar {
-    background-color: $color-background;
-    border: solid;
-    border-width: 1px;
-    border-color: $color-background;
+    background-color: $color-primary;
+   
 
     .nav-home {
-        background-color: $color-background;
+        background-color: $color-primary;
 
         .navbar-brand {
-            font-family: $font-logo;
+            font-family: $font-display;
             font-style: italic;
             padding: 0px;
             margin: 0px;
-            color: $color-primary;
+            color: $color-secondary;
             font-size: 40px;
-
-            
-            
         }   
     }
 
     .navbar-nav {
-        font-family: $font-body;
+        font-family: $font-display;
         width: 400px;
-        font-size: 14px;
+        font-size: 1.25rem;
         margin-left: auto;
-        color: $color-primary;
+        color: $color-secondary;
 
         .nav-link {
-            color: $color-primary;
+            color: $color-secondary;
         }
     }
 
    
     a:hover {
-        color: $color-secondary !important;
+        color: $color-primary !important;
         
     }
 

@@ -1,17 +1,22 @@
 @import './variables';
 
+
+
 .home-image {
-    background-image: url(/images/alexander-shatov-PHH_0uw9-Qw-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
+    background-color: $color-background;
 }
 
 .title-cont {
-    background-color: $color-background;
+    background-color: $color-primary;
+    background-image: url(/images/mateus-campos-felipe-OhThddppdnY-unsplash.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    height: 700px;
+    padding-top: 18rem;
 
-    .title {
-        font-size: 10vh;
+    
+
+    /*.title {
         font-family: $font-body;
         color: transparent;
         -webkit-text-stroke: 1px $color-orange ;
@@ -24,46 +29,45 @@
         100%{
             background-position: 2000px 0;
         }
+    }*/
+
+    .title {
+        font-family: $font-display;
+        color: $color-primary;
+        font-size: 8rem;
+
     }
 
     .title-info {
         color: $color-primary;
         font-family: $font-body;
-        font-size: 18px;
-    }
-
-    .create-info {
-        color: orange;
-        font-family: $font-body;
-        font-size: 18px;
-        font-style: italic;
+        font-size: 2.5rem;
 
     }
+
 }
 
 .about-main-cont {
-    background-color: $color-background;
+    background-color: $color-primary;
     padding-top: 7rem;
     padding-bottom: 7rem;
 
     .about-main {
-        background-color: $color-background;
+        background-color: $color-primary;
 
         .about-cont {
             margin-right: 4rem;
         }
 
         .about-title {
-            color: $color-orange;
-            font-family: $font-body;
-            font-size: 60px;
+            color: $color-secondary;
+            font-family: $font-display;
+            font-size: 6rem;
         }
 
         .about-info {
-            color: $color-primary;
+            color: $color-secondary;
             font-family: $font-body;
-            font-size: 16px;
-            
         }
 
         .browsing-icon {
@@ -73,86 +77,89 @@
 }
 
 .icons {
-    background-color: $color-background;
+    background-color: $color-primary;
     padding-bottom: 5rem;
 
     .fab {
-        color: $color-orange;
+        color: $color-secondary;
     }
 }
 
 
 .education-cont {
-    background: $color-background;
+    background: $color-primary;
     padding-bottom: 5rem;
 
+    .education-sub {
+        padding-left: 2rem;
+    }
+
     .education {
-        font-family: $font-body;
-        color: $color-primary;
-        font-size: 40px;
-        color: $color-orange;
+        font-family: $font-display;
+        color: $color-secondary;
+        font-size: 6rem;
+        color: $color-secondary;
     }
     .uni {
-        font-family: $font-body;
-        color: $color-orange;
-        font-size: 20px;
+        font-family: $font-display;
+        color: $color-secondary;
+        font-size: 2rem;
     }
     .education-info {
         font-family: $font-body;
-        color: $color-primary;
-    }
-
-    .nology {
-        font-family: $font-body;
-        color: $color-orange;
+        color: $color-secondary;
         font-size: 20px;
     }
- 
+
+   
     .bon {
-        font-family: $font-body;
-        color: $color-primary;
+        font-family: $font-display;
+        color: $color-secondary;
+        font-size: 1.5rem;
     }
 
-    .trainee {
-        font-family: $font-body;
-        color: $color-primary;
-    }
-
-    .trainee-info {
-        font-family: $font-body;
-        color: $color-primary;
-        
-    }
 
     .two-one {
-        color: $color-primary;
+        color: $color-secondary;
+        font-size: 20px;
+    }
+
+    .hands-img {
+        border-radius: 130px 20px 130px 20px;
+        opacity: 0.8;
     }
 }
 
 .project-cont {
-    background-color: $color-background;
+    background-color: $color-primary;
     padding-bottom: 7rem;
 
     .project {
-        font-family: $font-body;
-        font-size: 60px;
-        color: $color-orange;
-        padding-bottom: 2rem;
+        font-family: $font-display;
+        padding-top: 1rem;
+        color: $color-primary;
+        background-image: url(/images/1mateus-campos-felipe-SA1hu3CyrGM-unsplash.jpg);
+        height: 200px;
+        opacity: 0.9;
+        font-size: 7rem;
     }
 
+    .card {
+        text-align: center;
+        
     .card-title {
         font-family: $font-display;
-        color: $color-primary;
+        color: $color-secondary;
     }
 
     .card-text {
         font-family: $font-body;
-        color: $color-primary;
+        color: $color-secondary;
     }
 }
 
-.contact-main-cont {
-    background-color: $color-background;
+/*.contact-main-cont {
+    background-color: $color-primary;
 
     .contact {
         padding-top: 2rem;
@@ -224,65 +231,43 @@
     }
 
     
-}
+}*/
 
-@media screen and (min-width: 1350px) {
-    .title-2 {
-        font-size: 15vh;
-    }
-}
 
-@media screen and (max-width: 767px) {
-    .girl-img {
+
+@media screen and (max-width: 742px) {
+    .home-image {
         display: none;
     }
-    
-}
 
-@media screen and (max-width:767px) {
-    .programmer-img {
-        display: none;
+    .title-cont {
+        padding-top: 10rem;
     }
 }
 
-@media screen and (min-width: 993px) {
+
+@media screen and (min-width: 300px) {
+    .title {
+        font-size: 7vh;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .title {
+        font-size: 9.8vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-title {
+        font-size: 40px;
+    }
+
     .about-info {
-        font-size: 16px;
+        font-size: 14px;
     }
+
 }
 
-@media screen and (max-width: 991px) {
-    .about-info {
-        font-size: 12px;
-    }
-    .about-info {
-        max-width: 800px;
-
-    }
-}
-
-@media screen and (min-width: 1350px) {
-    .project {
-        font-size: 15vh;
-    }
-}
-
-@media screen and (min-width: 390px) {
-    .info-cont {
-        padding: 2rem;
-    }
-}
-
-@media screen and (max-width: 572px) {
-    .inbox {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 572px) {
-    .stars {
-        display: none;
-    }
-}
 
 
